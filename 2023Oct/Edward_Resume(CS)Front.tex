@@ -84,11 +84,13 @@
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
+\newcommand{\techstack}[2]{
+  {#1}: \footnotesize\emph{#2}\vspace{5pt}}
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-18px}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -122,7 +124,7 @@
 \end{center}
 % -------------------- SUMMARY --------------------
 \section{Summary}
-  {\small{Frontend developer with 4+ years development experience. Proficient in React, JavaScript, HTML, CSS, NodeJS, and Unix. Skilled in enhancing and adding new features to large JS code-bases. Passionate about the latest web technologies and delivering exceptional user experiences. Holds a Master of Philosophy in Life Science (Scientific Computation) from HKUST.}}
+  {\small{Frontend developer with 5+ years development experience. Proficient in React, JavaScript, HTML, CSS, NodeJS, and Unix. Skilled in enhancing and adding new features to large JS code-bases. Passionate about the latest web technologies and delivering exceptional user experiences. Holds a Master of Philosophy in Life Science (Scientific Computation) from HKUST.}}
   
 % -------------------- SKILLS --------------------
 \section{Skills}
@@ -146,6 +148,8 @@
 
         \resumeProjectHeading
           {\textbf{BTIG Hong Kong Limited} $|$ \footnotesize\emph{Analyst, Full-stack developer}\vspace{8pt}}{Jun 2022 - Sep 2023}
+          \techstack{Tech Stack} {Typescript, React, Electron, Redux, Restful API, Kafka, GraphQL, Websocket, HTML, CSS, Webpack}
+        \vspace{7px}
         \resumeItemListStart
             \resumeItem{Developed a robust desktop application using \textbf{Electron} and \textbf{React} that is currently used by 30+ professional traders. Allowing traders to execute trades quickly and efficiently.}
             \resumeItem{Developed and maintain an secured internal web portal that provides market insights to 50+ APAC based professional traders and operations. The Portal is built using React and \textbf{expressJS} consuming \textbf{Kafka, Websocket, Restful, GraphQL API} }
@@ -155,6 +159,8 @@
 
         \resumeProjectHeading
           {\textbf{Gritus Technology Limited}\vspace{8pt} $|$ \footnotesize\emph{Junior Full-stack developer}}{Aug 2021 - May 2022}
+          \techstack{Tech Stack} {Javascript, VueJS, Vuex, React, Electron, Redux, Restful API, AWS SQS, Websocket, HTML, CSS, Webpack}
+        \vspace{7px}
            \resumeItemListStart
             \resumeItem{Maintained an \textbf{Electron VueJS} vending machine app used by over 300+ machines in Hong Kong}
             \resumeItem{Developed and maintained a React Native based customer loyalty mobile app used by 1,000+ active users to redeem vending machine products and vouchers with \textbf{Laravel} and \textbf{React native}}
@@ -169,30 +175,36 @@
   \resumeSubHeadingListStart
         \resumeProjectHeading
           {\textbf{Coding 101}\vspace{8pt} $|$ \footnotesize\emph{part-time} $|$ \footnotesize\emph{Programmer}} {Sep 2019 - Sep 2023}
+          \techstack{Tech Stack} {Javascript, React Native, React, HTML, CSS, Webpack}\newline
           \small{Deliver STEAM material to general publicity; develop tutorial material for STEAM class in \textbf{Arduino C, python} and etc; Develop and maintain applications for event using \textbf{React/React Native} and \textbf{NodeJS} }
 
         \resumeProjectHeading
           {\textbf{USThing}\vspace{8pt} $|$ \footnotesize\emph{Voluntary-Activity} $|$ \footnotesize\emph{web developer}} {Nov 2020 - Jul 2021}
+          \techstack{Tech Stack} {Javascript, React, NodeJS, HTML, CSS, Webpack}\newline
           \small{Collaborate with HKUST staff and team member to create secure and functional marketing website for USThing using \textbf{React} with \textbf{msal} }
           
+          \clearpage
+
+          \vspace*{10pt}
+
         \resumeProjectHeading
           {\textbf{Coding 101}\vspace{8pt} $|$ \footnotesize\emph{Internship} $|$ \footnotesize\emph{Summer Intern}} {Jul 2018 - Oct 2018}
+          \techstack{Tech Stack} {Javascript, EmberJS, NodeJS, JQuery, Socket.io, HTML, CSS}\newline
           \small{ Develop STEAM competition dashboard using \textbf{JQuery} with \textbf{bootstrap} frontend and \textbf{NodeJS} backend with \textbf{websocket}; Hosting STEAM tutorial class to student covering \textbf{Arduino}, \textbf{minecraft} and \textbf{microbit} }
     \resumeSubHeadingListEnd 
 % -------------------- PROJECTS --------------------
-\clearpage
 
-\vspace*{10pt}
 \section{Featured Projects}
     \resumeSubHeadingListStart
         
         \resumeProjectHeading
-        {\textbf{Wedding-Proposal-Suite} $|$ \footnotesize\emph{React Native, React, NodeJS, express , nx, tailwindCSS, postgres , Git}}{Nov 2022}
+        {\textbf{Wedding-Proposal-Suite} $|$ \footnotesize\emph{React Native, React, NodeJS, tailwindCSS, HTML, CSS}}{Nov 2022}
 
         \vspace{5pt}
         \faIcon{github}
         \href{https://github.com/DrEdwardPCB/Wedding-Proposal-Suite}
         {\underline{https://github.com/DrEdwardPCB/Wedding-Proposal-Suite}} $  $
+        \vspace{15px}
         \resumeItemListStart
             \resumeItem{Developed a mobile app using \textbf{React Native} for fiancee to complete the city hunt game during wedding proposal}
             \resumeItem{Developed a secured portal using \textbf{React} for helpers to display QR code and show location }
@@ -206,12 +218,13 @@
         \faIcon{github}
         \href{https://github.com/DrEdwardPCB/python-taew}
         {\underline{https://github.com/DrEdwardPCB/python-taew}} $  $
+        \vspace{15px}
         \resumeItemListStart
             \resumeItem{Developed a library in python for carrying out technical analysis based on \textbf{Elliott wave theory}}
         \resumeItemListEnd
 
         \resumeProjectHeading
-        {\textbf{JAVASCRIPT-Clustering} $|$ \footnotesize\emph{JQuery, Bootstrap, CSS, Git}}{Dec 2020}
+        {\textbf{JAVASCRIPT-Clustering} $|$ \footnotesize\emph{JQuery, Bootstrap, CSS, HTML}}{Dec 2020}
         
         \vspace{5pt}
         \faIcon{github}
@@ -221,6 +234,7 @@
         \faIcon{code}
         \href{https://dredwardpcb.github.io/JAVASCRIPT-Clustering/index.html}
         {\underline{https://dredwardpcb.github.io/JAVASCRIPT-Clustering/index.html}} $  $
+        \vspace{15px}
         \resumeItemListStart
             \resumeItem{Developed a frontend web page for perfomring unsupervised machine learning using 3 different clustering algorithm}
             \resumeItem{it uses \textbf{JQuery} and \textbf{bootstrap} and support \textbf{K-mean, Mean-shift, DBSCAN} clustering algorithm }
